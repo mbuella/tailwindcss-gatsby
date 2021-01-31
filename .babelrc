@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [ "@babel/preset-env", { "modules": false } ],
+    [
+      "babel-preset-gatsby",
+      {
+        "targets": {
+          "browsers": [">0.2%", "last 2 versions", "not dead"]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-external-helpers"
+  ]
+}
