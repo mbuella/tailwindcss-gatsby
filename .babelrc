@@ -1,11 +1,16 @@
 {
   "presets": [
-    [ "@babel/preset-env", { "modules": false } ],
     [
       "babel-preset-gatsby",
       {
+        "modules": false,
+        "useBuiltIns": true,
         "targets": {
-          "browsers": [">0.2%", "last 2 versions", "not dead"]
+          "browsers": [
+            "> 1%",
+            "last 2 versions",
+            "Firefox ESR"
+          ]
         }
       }
     ]
