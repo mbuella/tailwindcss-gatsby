@@ -9,7 +9,7 @@ const PostItem = (props) => (
       <Img alt="Placeholder" className="block h-auto w-full" fixed={props.post.image.childImageSharp.fixed} />
     </a>
 
-    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+    <header class="flex items-center justify-between h-24 leading-tight p-2 md:p-4">
       <h1 class="text-lg">
         <a class="no-underline hover:underline text-black" href="#">
           {props.post.title}
@@ -43,7 +43,7 @@ const Posts = () => {
             date
             image {
               childImageSharp {
-                fixed(width: 459) {
+                fixed(width: 459, height: 306) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }
