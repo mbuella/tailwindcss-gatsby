@@ -9,16 +9,19 @@ const path = require(`path`)
 module.exports = {
   /* Your site config here */
   plugins: [
-    'gatsby-plugin-preact',
-    'gatsby-plugin-postcss',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-yaml',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'images',
-        path: path.join(__dirname, 'static', 'images'),
+        path: path.join(__dirname, 'data'),
       },
     },
+    'gatsby-plugin-preact',
+    'gatsby-plugin-postcss',
   ],
+  mapping: {
+    "PostsYaml.author": "AuthorsYaml.uname",
+  },
 }

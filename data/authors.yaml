@@ -1,0 +1,6 @@
+- uname: jdoe
+  name: John Doe
+  image: images/authors/thumb1.jpg
+- uname: mjoe
+  name: Mary Joe
+  image: images/authors/thumb2.jpg
